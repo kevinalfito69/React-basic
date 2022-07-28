@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App';
 import './index.css';
-import HelloDunia from './container/StateFullComponent';
-import HelloWorld from './components/HelloComponent';
 import reportWebVitals from './reportWebVitals';
 // stateless functional component
 
@@ -10,8 +9,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <HelloWorld />
-  <HelloDunia />
+  <App/>
   </React.StrictMode>
 );
 
