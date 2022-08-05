@@ -14,7 +14,10 @@ const Post = (props)=>{
                         <img className="object-cover bg-center" src="https://placeimg.com/600/500/any?t=1658982040078" alt="" />
                     </div>
                 </div>
+                <div className="flex flex-wrap gap-2">
                 <button className="py-2 text-sm  px-6 bg-rose-500 text-white font-semibold rou nded-lg" onClick={()=>props.remove(props.data.id)}>Delete</button>
+                <button className="py-2 text-sm  px-6 bg-teal-500 text-white font-semibold rou nded-lg" onClick={()=>props.update(props.data)}>Update</button>
+                </div>
             </div>
 
             )
