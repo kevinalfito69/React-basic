@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import axios from "axios";
-import Post from "../../components/Post/Post";
+import Post from "./Post/Post";
 import Swal from "sweetalert2";
 class BlogPost extends Component {
   state = {
@@ -97,6 +97,11 @@ handleUpdate = (data)=>{
     }
   }
 
+  // Detail Handler
+  handlerDetail=(id)=>{
+    this.props.history.pushState(`/detail-post/${id}`);
+  }
+
   componentDidMount() {
     this.handleGetApi();
   }
@@ -119,7 +124,7 @@ render() {
        
         </div>
         {this.state.post.map((post) => {
-            return <Post key={post.id} data={post} remove={this.handleRemove} update={this.handleUpdate} />;
+            return <Post key={post.id} data={post} remove={this.handleRemove} update={this.handleUpdate} goDetail={this.handlerDetail}/>;
             
         })}
     </Fragment>

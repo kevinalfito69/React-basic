@@ -7,7 +7,7 @@ const Post = (props)=>{
                 <div className="flex">
                     {/* content */}
                     <div className="px-4 max-w-xs flex flex-col">
-                        <h3 className="font-semibold text-slate-800 text-lg">{props.data.title}</h3>
+                        <h3 className="font-semibold text-slate-800 text-lg cursor-pointer" onClick={()=>props.goDetail(props.data.id)}>{props.data.title}</h3>
                         <p className="truncate text-sm font-normal text-slate-500">{props.data.body}</p>
                     </div>
                     <div className="w-52 rounded-lg overflow-hidden">

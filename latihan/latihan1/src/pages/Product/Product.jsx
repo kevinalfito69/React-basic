@@ -1,8 +1,13 @@
 import React,{Component, Fragment} from "react";
 
 class Product extends Component{
-    state ={
-        order:0
+    constructor(props){
+        super(props)
+        this.state ={
+            order:0
+        }
+        this.handlePlus = this.handlePlus.bind(this)
+        this.handleMinus = this.handleMinus.bind(this)
     }
     handlePlus = () =>{
         this.setState({
