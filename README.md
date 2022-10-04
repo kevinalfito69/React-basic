@@ -1,6 +1,7 @@
 # React-basic
 
 ## Simple routing react
+<pre><code>
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
@@ -49,3 +50,4 @@ root.render(
     <App />
   </BrowserRouter>
 );
+</pre></code>
